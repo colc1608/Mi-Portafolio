@@ -1,4 +1,4 @@
-package pe.com.colc.test02.entity;
+package pe.com.colc.test02.repository.entity;
 
 import jakarta.persistence.*;
 import lombok.*;

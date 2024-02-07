@@ -272,6 +272,265 @@
 					"response": []
 				}
 			]
+		},
+		{
+			"name": "proyecto-03",
+			"item": [
+				{
+					"name": "api/alumnos",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:8080/api/alumnos",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"api",
+								"alumnos"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "api/alumnos",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n        \"nombre\": \"Nombre1\",\r\n        \"apellido\": \"Paterno1 Materno1\",\r\n        \"fechaNacimiento\": \"2001-02-10T00:00:00\",\r\n        \"promedio\": 11.1,\r\n        \"activo\": true\r\n    }",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:8080/api/alumnos",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"api",
+								"alumnos"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "api/alumnos/4",
+					"request": {
+						"method": "PUT",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n        \"nombre\": \"Nombre 111\",\r\n        \"apellido\": \"Paterno 11 Materno 111\",\r\n        \"fechaNacimiento\": \"2001-02-10T00:00:00\",\r\n        \"promedio\": 12.2,\r\n        \"activo\": true\r\n    }",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:8080/api/alumnos/4",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"api",
+								"alumnos",
+								"4"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "api/alumnos/1",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:8080/api/alumnos/1",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"api",
+								"alumnos",
+								"1"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "api/alumnos/1",
+					"request": {
+						"method": "DELETE",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:8080/api/alumnos/1",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"api",
+								"alumnos",
+								"1"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "api/alumnos/search-by-activos",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:8080/api/alumnos/search-by-activos",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"api",
+								"alumnos",
+								"search-by-activos"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "api/alumnos/search-by-name",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:8080/api/alumnos/search-by-name?nombre=andrea",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"api",
+								"alumnos",
+								"search-by-name"
+							],
+							"query": [
+								{
+									"key": "nombre",
+									"value": "andrea"
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "api/alumnos/search-by-promedio",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:8080/api/alumnos/search-by-promedio?num1=16&num2=18",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"api",
+								"alumnos",
+								"search-by-promedio"
+							],
+							"query": [
+								{
+									"key": "num1",
+									"value": "16"
+								},
+								{
+									"key": "num2",
+									"value": "18"
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "api/alumnos/search-by-dni",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:8080/api/alumnos/search-by-dni?dni=11112222",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"api",
+								"alumnos",
+								"search-by-dni"
+							],
+							"query": [
+								{
+									"key": "dni",
+									"value": "11112222"
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "api/alumnos/search-by-fechaNacimiento",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:8080/api/alumnos/search-by-fechaNacimiento?fecha=1991-12-22T00:00:00",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"api",
+								"alumnos",
+								"search-by-fechaNacimiento"
+							],
+							"query": [
+								{
+									"key": "fecha",
+									"value": "1991-12-22T00:00:00"
+								}
+							]
+						}
+					},
+					"response": []
+				}
+			]
 		}
 	]
 }

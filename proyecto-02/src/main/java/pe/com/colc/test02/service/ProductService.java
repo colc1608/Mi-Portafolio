@@ -2,7 +2,6 @@ package pe.com.colc.test02.service;
 
 import pe.com.colc.test02.controller.request.ProductRequest;
 import pe.com.colc.test02.controller.response.ProductResponse;
-import pe.com.colc.test02.entity.ProductEntity;
 
 import java.util.List;
 

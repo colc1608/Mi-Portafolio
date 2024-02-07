@@ -4,7 +4,7 @@ import lombok.extern.slf4j.Slf4j;
 import org.modelmapper.ModelMapper;
 import org.modelmapper.TypeToken;
 import pe.com.colc.test02.controller.response.ProductResponse;
-import pe.com.colc.test02.entity.ProductEntity;
+import pe.com.colc.test02.repository.entity.ProductEntity;
 
 import java.util.ArrayList;
 import java.util.List;

@@ -1,0 +1,102 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="AutoImportSettings">
+    <option name="autoReloadType" value="SELECTIVE" />
+  </component>
+  <component name="ChangeListManager">
+    <list default="true" id="e8a94ed4-df8b-45e6-8c2f-7c2e6af267ce" name="Changes" comment="">
+      <change afterPath="$PROJECT_DIR$/.idea/encodings.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/uiDesigner.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/pe/com/colc/test04/SpringBoot.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/pe/com/colc/test04/controller/CiudadController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/pe/com/colc/test04/controller/request/CiudadRequest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/pe/com/colc/test04/controller/response/CiudadResponse.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/pe/com/colc/test04/controller/response/GenericResponse.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/pe/com/colc/test04/repository/CiudadRepository.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/pe/com/colc/test04/repository/entity/CiudadEntity.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/pe/com/colc/test04/service/CiudadService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/pe/com/colc/test04/service/impl/CiudadServiceImpl.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/application.properties" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/data.sql" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/schema.sql" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Postman Project/Portafolio Cesar.postman_collection.json" beforeDir="false" afterPath="$PROJECT_DIR$/../Postman Project/Portafolio Cesar.postman_collection.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../proyecto-02/bd-proyecto02.sql" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../proyecto-02/src/main/java/pe/com/colc/test02/Prueba.java" beforeDir="false" afterPath="$PROJECT_DIR$/../proyecto-02/src/main/java/pe/com/colc/test02/Prueba.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../proyecto-02/src/main/java/pe/com/colc/test02/entity/ProductEntity.java" beforeDir="false" afterPath="$PROJECT_DIR$/../proyecto-02/src/main/java/pe/com/colc/test02/repository/entity/ProductEntity.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../proyecto-02/src/main/java/pe/com/colc/test02/repository/ProductRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/../proyecto-02/src/main/java/pe/com/colc/test02/repository/ProductRepository.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../proyecto-02/src/main/java/pe/com/colc/test02/service/ProductService.java" beforeDir="false" afterPath="$PROJECT_DIR$/../proyecto-02/src/main/java/pe/com/colc/test02/service/ProductService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../proyecto-02/src/main/java/pe/com/colc/test02/service/impl/ProductServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/../proyecto-02/src/main/java/pe/com/colc/test02/service/impl/ProductServiceImpl.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../proyecto-03/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../proyecto-03/pom.xml" afterDir="false" />
+    </list>
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Interface" />
+        <option value="Class" />
+      </list>
+    </option>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/.." />
+  </component>
+  <component name="MarkdownSettingsMigration">
+    <option name="stateVersion" value="1" />
+  </component>
+  <component name="ProjectColorInfo"><![CDATA[{
+  "associatedIndex": 0
+}]]></component>
+  <component name="ProjectId" id="2c3FTpk34HCh3jDXpJZ3fjbjzTh" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "Application.SpringBoot.executor": "Run",
+    "RunOnceActivity.OpenProjectViewOnStart": "true",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "git-widget-placeholder": "main",
+    "kotlin-language-version-configured": "true"
+  }
+}]]></component>
+  <component name="RunManager">
+    <configuration name="SpringBoot" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="pe.com.colc.test04.SpringBoot" />
+      <module name="proyecto-04" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="pe.com.colc.test04.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <recent_temporary>
+      <list>
+        <item itemvalue="Application.SpringBoot" />
+      </list>
+    </recent_temporary>
+  </component>
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="e8a94ed4-df8b-45e6-8c2f-7c2e6af267ce" name="Changes" comment="" />
+      <created>1707332367408</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1707332367408</updated>
+    </task>
+    <servers />
+  </component>
+</project>

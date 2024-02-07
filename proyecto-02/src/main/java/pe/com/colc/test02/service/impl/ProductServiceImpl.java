@@ -7,7 +7,7 @@ import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 import pe.com.colc.test02.controller.request.ProductRequest;
 import pe.com.colc.test02.controller.response.ProductResponse;
-import pe.com.colc.test02.entity.ProductEntity;
+import pe.com.colc.test02.repository.entity.ProductEntity;
 import pe.com.colc.test02.repository.ProductRepository;
 import pe.com.colc.test02.service.ProductService;
 import java.util.List;
