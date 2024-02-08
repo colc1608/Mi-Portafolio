@@ -1,15 +1,15 @@
 # Mi-Portafolio
 Proyectos base de ejemplo con Java
 
-| Proyecto      | Descripcion                                   	|
-| ------------- | -------------------------------------------------	|
-| proyecto-01   | Api Rest Basico                               	|
-| proyecto-02   | Api Rest con JPA, MySQL, CRUD basico          	|
-| proyecto-03   | Api Rest con JPA, MySQL, Query personalizado  	|
-| proyecto-04   | Api Rest con JPA, MySQL, Procedimientos           |
-| proyecto-05   | Api Rest con JPA, H2 en memoria en Configuracion  |
-| proyecto-06   | Api Rest con JPA, H2 en memoria en Properties 	|
-| proyecto-07   | Api Rest con H2 en memoria en properties      	|
+| Proyecto      | Descripcion                                   					|
+| ------------- | -------------------------------------------------					|
+| proyecto-01   | Api Rest Basico                               					|
+| proyecto-02   | Api Rest con JPA, MySQL, CRUD basico          					|
+| proyecto-03   | Api Rest con JPA, MySQL, Query personalizado  					|
+| proyecto-04   | Api Rest con JPA, MySQL, Procedimientos           				|
+| proyecto-05   | Api Rest, Validacion Request, @Valid, Interceptor validador		|
+| proyecto-06   | Api Rest, Multiple Data Base, JDBC Template, Stored Procedure		|
+| proyecto-07   | en progreso...							      					|
 
 Proximos proyectos:
 - validadores
