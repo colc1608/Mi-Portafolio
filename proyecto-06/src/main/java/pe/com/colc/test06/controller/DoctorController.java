@@ -2,9 +2,8 @@ package pe.com.colc.test06.controller;
 
 import lombok.extern.slf4j.Slf4j;
 import org.springframework.beans.factory.annotation.Autowired;
-import org.springframework.web.bind.annotation.GetMapping;
-import org.springframework.web.bind.annotation.RequestMapping;
-import org.springframework.web.bind.annotation.RestController;
+import org.springframework.web.bind.annotation.*;
+import pe.com.colc.test06.controller.request.DoctorRequest;
 import pe.com.colc.test06.controller.response.DoctorResponse;
 import pe.com.colc.test06.service.DoctorService;
 import java.util.List;
@@ -18,12 +17,23 @@ public class DoctorController {
     DoctorService doctorService;
 
     @GetMapping
-    public List<DoctorResponse> obtenerDoctorAndEspecialidad() {
+    public List<DoctorResponse> obtenerDoctores() {
 
-        List<DoctorResponse> lista1 =  doctorService.obtenerPorEstadoAndNombre(true, "juan");
-        log.info("controller - obtenerDoctorAndEspecialidad - lista1 = {}", lista1);
+        List<DoctorResponse> response =  doctorService.obtenerDoctores();
+        return response;
+    }
 
-        return lista1;
+    @GetMapping("/search-by-name")
+    public List<DoctorResponse> buscarPorNombre(@RequestParam(name = "nombreDoctor", required = true) String nombre) {
+
+        List<DoctorResponse> response =  doctorService.obtenerDoctoresPorNombre(nombre);
+        return response;
+    }
+
+    @PostMapping
+    public DoctorResponse crearDoctor(@RequestBody DoctorRequest objInput) {
+        DoctorResponse response =  doctorService.crear(objInput);
+        return response;
     }
 
 }

@@ -1,6 +1,10 @@
-package pe.com.colc.test06.controller.response;
+package pe.com.colc.test06.repository.bd2.entity;
 
-import lombok.*;
+
+import lombok.AllArgsConstructor;
+import lombok.Builder;
+import lombok.Data;
+import lombok.NoArgsConstructor;
 
 import java.time.LocalDateTime;
 
@@ -8,8 +12,7 @@ import java.time.LocalDateTime;
 @Builder
 @AllArgsConstructor
 @NoArgsConstructor
-@ToString
-public class DoctorResponse {
+public class ListarDoctoresEntity {
 
     private Integer idDoctor;
     private String nombreDoctor;

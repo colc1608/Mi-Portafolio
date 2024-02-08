@@ -1,4 +1,4 @@
-package pe.com.colc.test06.controller.request;
+package pe.com.colc.test06.repository.bd2.entity;
 
 import lombok.*;
 
@@ -9,7 +9,7 @@ import java.time.LocalDateTime;
 @AllArgsConstructor
 @NoArgsConstructor
 @ToString
-public class DoctorRequest {
+public class DoctorRegistrarEntity {
 
     private String nombreDoctor;
     private String apellidoDoctor;

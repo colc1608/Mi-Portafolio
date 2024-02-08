@@ -9,7 +9,7 @@ import lombok.NoArgsConstructor;
 @Builder
 @AllArgsConstructor
 @NoArgsConstructor
-public class DoctorEspecialidadEntity {
+public class ListarDoctoresPorNombreEntity {
 
     private String nombreEspecialidad;
     private Integer idDoctor;
