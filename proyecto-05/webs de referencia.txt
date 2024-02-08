@@ -1,0 +1,3 @@
+https://www.bezkoder.com/spring-boot-validate-request-body/
+https://www.bezkoder.com/spring-boot-custom-validation/
+https://www.tutorialspoint.com/validation-in-spring-boot
