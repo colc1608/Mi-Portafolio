@@ -17,4 +17,5 @@ public class AlumnoRequest {
     private String apellido;
     private LocalDateTime fechaNacimiento;
     private Double promedio;
+    
 }
