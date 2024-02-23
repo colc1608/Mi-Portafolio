@@ -62,4 +62,21 @@ public class DoctorServiceImpl implements DoctorService {
 
         return response;
     }
+
+    @Override
+    public void actualizar(Integer id, DoctorRequest request) {
+
+        DoctorRegistrarEntity requestDataBase = new ModelMapper().map(request, DoctorRegistrarEntity.class);
+        log.info("request del controller = {}", request);
+        log.info("convertido en entity para la BD = {}", requestDataBase);
+
+        doctorRepository.actualizarDoctor(id, requestDataBase);
+    }
+
+    @Override
+    public void eliminar(Integer id) {
+
+        doctorRepository.eliminarDoctor(id);
+
+    }
 }

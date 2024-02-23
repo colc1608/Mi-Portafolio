@@ -13,8 +13,6 @@ import pe.com.colc.test06.repository.bd2.entity.ListarDoctoresPorNombreEntity;
 import pe.com.colc.test06.repository.bd2.mapper.ListarDoctoresMapper;
 import pe.com.colc.test06.repository.bd2.mapper.ListarDoctoresPorNombreMapper;
 import pe.com.colc.test06.repository.bd2.procedure.DoctorRepository;
-
-import java.util.ArrayList;
 import java.util.List;
 import java.util.Map;
 
@@ -26,6 +24,14 @@ public class DoctorRepositoryImpl implements DoctorRepository {
     @Qualifier("jdbcTemplate2")
     private JdbcTemplate jdbcTemplate2;
 
+    private static final String SP_CREAR_DOCTOR = "SP_CrearDoctor";
+    private static final String SP_OBTENER_DOCTORES = "SP_ListarDoctores";
+    private static final String SP_OBTENER_DOCTORES_POR_NOMBRE = "SP_ListarDoctoresPorNombre";
+    private static final String SP_ACTUALIZAR_DOCTOR = "SP_ActualizarDoctor";
+    private static final String SP_ELIMNINAR_DOCTOR = "SP_EliminarDoctor";
+    private static final String ESQUEMA_DATABASE = "dbo";
+
+
     @Override
     public List<ListarDoctoresPorNombreEntity> listarDoctoresPorNombre(String nombre) {
 
@@ -35,8 +41,8 @@ public class DoctorRepositoryImpl implements DoctorRepository {
 
         //Preparar Procedure
         Map<String, Object> resultProcedure = new SimpleJdbcCall(jdbcTemplate2)
-                .withProcedureName("SP_ListarDoctoresPorNombre")
-                .withSchemaName("dbo")
+                .withProcedureName(SP_OBTENER_DOCTORES_POR_NOMBRE)
+                .withSchemaName(ESQUEMA_DATABASE)
                 .returningResultSet("rptaDataBase", new ListarDoctoresPorNombreMapper())
                 .execute(sqlParameter);
 
@@ -51,8 +57,8 @@ public class DoctorRepositoryImpl implements DoctorRepository {
 
         //Preparar Procedure
         Map<String, Object> resultProcedure = new SimpleJdbcCall(jdbcTemplate2)
-                .withProcedureName("SP_ListarDoctores")
-                .withSchemaName("dbo")
+                .withProcedureName(SP_OBTENER_DOCTORES)
+                .withSchemaName(ESQUEMA_DATABASE)
                 .returningResultSet("rptaDataBase", new ListarDoctoresMapper())
                 .execute();
 
@@ -67,6 +73,7 @@ public class DoctorRepositoryImpl implements DoctorRepository {
 
         //Preparar parametros
         MapSqlParameterSource sqlParameter = new MapSqlParameterSource()
+                .addValue("P_id_especialidad", request.getIdEspecialidad())
                 .addValue("P_nombre", request.getNombreDoctor())
                 .addValue("P_apellido", request.getApellidoDoctor())
                 .addValue("P_codigo_colegiatura", request.getCodigoColegiatura())
@@ -75,8 +82,8 @@ public class DoctorRepositoryImpl implements DoctorRepository {
 
         //Preparar Procedure
         Map<String, Object> resultProcedure = new SimpleJdbcCall(jdbcTemplate2)
-                .withProcedureName("SP_CrearDoctor")
-                .withSchemaName("dbo")
+                .withProcedureName(SP_CREAR_DOCTOR)
+                .withSchemaName(ESQUEMA_DATABASE)
                 .execute(sqlParameter);
 
         //Leer resultados
@@ -91,6 +98,42 @@ public class DoctorRepositoryImpl implements DoctorRepository {
         log.info("crearDoctor - Para el request entity = {}", request);
 
         return idResponse;
+    }
+
+    @Override
+    public void actualizarDoctor(Integer id, DoctorRegistrarEntity request) {
+
+        //Preparar parametros
+        MapSqlParameterSource sqlParameter = new MapSqlParameterSource()
+                .addValue("P_id", id)
+                .addValue("P_id_especialidad", request.getIdEspecialidad())
+                .addValue("P_nombre", request.getNombreDoctor())
+                .addValue("P_apellido", request.getApellidoDoctor())
+                .addValue("P_codigo_colegiatura", request.getCodigoColegiatura())
+                .addValue("P_sueldo", request.getSueldo())
+                .addValue("P_fecha_nacimiento", request.getFechaNacimiento());
+
+        //Preparar Procedure
+        new SimpleJdbcCall(jdbcTemplate2)
+                .withProcedureName(SP_ACTUALIZAR_DOCTOR)
+                .withSchemaName(ESQUEMA_DATABASE)
+                .execute(sqlParameter);
+
+    }
+
+    @Override
+    public void eliminarDoctor(Integer id) {
+
+        //Preparar parametros
+        MapSqlParameterSource sqlParameter = new MapSqlParameterSource()
+                .addValue("P_id", id);
+
+        //Preparar Procedure
+        new SimpleJdbcCall(jdbcTemplate2)
+                .withProcedureName(SP_ELIMNINAR_DOCTOR)
+                .withSchemaName(ESQUEMA_DATABASE)
+                .execute(sqlParameter);
+
     }
 
 

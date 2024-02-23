@@ -11,6 +11,7 @@ import java.time.LocalDateTime;
 @ToString
 public class DoctorRequest {
 
+    private String idEspecialidad;
     private String nombreDoctor;
     private String apellidoDoctor;
     private String codigoColegiatura;

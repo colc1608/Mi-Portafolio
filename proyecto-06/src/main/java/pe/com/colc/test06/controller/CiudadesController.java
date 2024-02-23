@@ -20,7 +20,7 @@ public class CiudadesController {
 
 
     @GetMapping
-    List<CiudadResponse> obtenerDoctorAndEspecialidad() {
+    List<CiudadResponse> obtenerCiudadesPorPoblacionYSueldo() {
 
         List<CiudadResponse> lista2 =  ciudadService.obtenerPorPoblacionAndSueldo(2000, 1500.0);
         log.info("controller - obtenerDoctorAndEspecialidad - lista2 = {}", lista2);

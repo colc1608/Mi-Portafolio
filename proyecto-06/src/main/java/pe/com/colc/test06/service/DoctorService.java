@@ -13,5 +13,7 @@ public interface DoctorService {
     public List<DoctorResponse> obtenerDoctoresPorNombre(String nombre);
     public DoctorResponse obtenerUno(Integer id);
     public DoctorResponse crear(DoctorRequest request);
+    public void actualizar(Integer id, DoctorRequest request);
+    public void eliminar(Integer id);
 
 }

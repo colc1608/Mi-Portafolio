@@ -36,4 +36,20 @@ public class DoctorController {
         return response;
     }
 
+
+    @DeleteMapping("/{idDoc}")
+    public void eliminarDoctor(@PathVariable("idDoc") Integer idDoctor) {
+
+        doctorService.eliminar(idDoctor);
+
+    }
+
+
+    @PutMapping("/{idDoctor}")
+    public void updateProduct(@PathVariable("idDoctor") Integer idDoc, @RequestBody DoctorRequest request) {
+
+        doctorService.actualizar(idDoc, request);
+
+    }
+
 }
