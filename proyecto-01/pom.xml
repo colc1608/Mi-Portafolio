@@ -8,7 +8,7 @@
 	<version>1.0.0</version>
 
 
-	<name>Controlador Rest Simple</name>
+	<name>project-01</name>
 	<description>Aplicacion base para aplicaciones web con REST</description>
 
 	<properties>

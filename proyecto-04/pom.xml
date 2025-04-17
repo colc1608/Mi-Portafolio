@@ -8,6 +8,8 @@
     <artifactId>test04</artifactId>
     <version>1.0-SNAPSHOT</version>
 
+    <name>project-04</name>
+
     <properties>
         <maven.compiler.source>17</maven.compiler.source>
         <maven.compiler.target>17</maven.compiler.target>

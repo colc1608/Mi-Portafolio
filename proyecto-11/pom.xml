@@ -5,8 +5,10 @@
     <modelVersion>4.0.0</modelVersion>
 
     <groupId>com.empresa</groupId>
-    <artifactId>proyecto-11</artifactId>
+    <artifactId>project-11</artifactId>
     <version>1.0</version>
+
+    <name>project-11</name>
 
     <properties>
         <maven.compiler.source>17</maven.compiler.source>

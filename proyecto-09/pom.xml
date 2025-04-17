@@ -5,8 +5,11 @@
     <modelVersion>4.0.0</modelVersion>
 
     <groupId>pe.com.colc.test</groupId>
-    <artifactId>proyecto-09</artifactId>
+    <artifactId>project-09</artifactId>
     <version>1.0</version>
+
+    <name>project-09</name>
+    <description>Hexagonal xxx</description>
 
     <properties>
         <maven.compiler.source>17</maven.compiler.source>

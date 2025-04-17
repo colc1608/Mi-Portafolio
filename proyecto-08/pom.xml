@@ -5,8 +5,10 @@
     <modelVersion>4.0.0</modelVersion>
 
     <groupId>pe.com.colc.test</groupId>
-    <artifactId>proyecto-09</artifactId>
+    <artifactId>project-08</artifactId>
     <version>1.0.0</version>
+    
+    <name>project-08</name>
 
     <properties>
         <maven.compiler.source>17</maven.compiler.source>
